@@ -1,74 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{ box-sizing: border-box;}
-        div{ border : 1px solid black;}
-        .container {width:800px; height:600px;}
-        .header {height:20%;}
-
-        .inner_header,
-        .main_inner{float : left;}
-        #logo{width:20%; height:100%;}
-        #title{width:60%; height:100%;}
-        #reserved{width:20%; height:100%;}
-
-        .nav{height : 10%;}
-        #contents{width:70%; height: 100%;}
-        #side{width:30%; height: 100%;}
-
-        .main {height: 50%;}
-        .footer {height : 20%;}
-
-        
-        /* nav디자인 */
-        ul,li{
-            /* border: 1px solid black; */
-        }
-        ul{
-            overflow: hidden;
-            padding: 0px;
-            background-color: rgb(88, 77, 241);
-
-            height:100%;
-            margin: 0px;
-        }
-        li{
-            float:left;
-            list-style-type: none;
-
-            /* margin:0px;
-            공간안사라짐 , 위치 바꾸는 용도는 아님!!*/
-            /* margin: 5px; */
-
-            color:white;
-            height: 100%;
-            width: 25%;
-
-            /* 수직수평정렬- 텍스트가 여러 줄 일때는 사용 못함 */
-            text-align: center;
-            line-height: 60px; 
-            transition-duration: 0.3s;
-
-        }
-        li:hover{
-            cursor: pointer;
-            background-color: gray;
-        }
-    
-    </style>
 </head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    div {
+        border: 1px solid black;
+    }
+
+    .container {
+        width: 800px;
+        height: 600px;
+        margin: auto;
+    }
+
+    /* 헤더 css */
+    .header {
+        height: 20%;
+    }
+
+    .header div {
+        float: left;
+        height: 100%;
+    }
+
+    .logo {
+        width: 20%
+    }
+
+    .title {
+        width: 65%
+    }
+
+    .reserved {
+        width: 15%
+    }
+
+
+    /* navi css */
+    .navi {
+        height: 10%;
+    }
+
+    .navi ul {
+        /* border: 1px solid red; */
+        padding: 0px;
+        height: 100%;
+        margin: 0px;
+
+    }
+
+    .navi li {
+        list-style-type: none;
+        background-color: blanchedalmond;
+        /* border: 1px solid blue; */
+        float: left;
+        width: 25%;
+        height: 100%;
+        line-height: 55px;
+        text-align: center;
+    }
+
+    .navi li:hover {
+        cursor: pointer;
+        background-color: rgb(228, 228, 228);
+    }
+
+
+    /* main css */
+    .main {
+        height: 55%;
+    }
+
+    .main div {
+        float: left;
+        height: 100%;
+    }
+
+    .contents {
+        width: 70%;
+    }
+
+    .side {
+        width: 30%;
+    }
+
+
+    .footer {
+        height: 15%;
+    }
+</style>
+
 <body>
     <div class="container">
         <div class="header">
-            <div class="inner_header" id="logo">LOGO</div>
-            <div class="inner_header" id="title">TITLE</div>
-            <div class="inner_header" id="reserved">RESERVED</div>
+            <div class="logo">LOGO</div>
+            <div class="title">title</div>
+            <div class="reserved">reserved</div>
+
         </div>
-        <div class="nav">
+        <div class="navi">
             <ul>
                 <li>Home</li>
                 <li>About</li>
@@ -77,10 +115,11 @@
             </ul>
         </div>
         <div class="main">
-            <div class="main_inner" id="contents">Contents</div>
-            <div class="main_inner" id="side">Side</div>
+            <div class="contents">contents</div>
+            <div class="side">side</div>
         </div>
-        <div class="footer">FOOTER</div>
+        <div class="footer">footer</div>
     </div>
 </body>
+
 </html>
