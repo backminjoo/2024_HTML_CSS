@@ -4,200 +4,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        div {
+            border: 1px solid black;
+        }
+
+        .container {
+            width: 1000px;
+            height: 900px;
+            margin: auto;
+        }
+
+
+        /* header css */
+        .header {
+            height: 20%;
+        }
+
+        .header div {
+            float: left;
+            height: 100%;
+        }
+
+        .header .logo {
+            width: 20%;
+        }
+
+        .header .title {
+            width: 60%;
+
+        }
+
+        .header .reserved {
+            width: 20%;
+        }
+
+        /* navi css */
+        .navi {
+            height: 6%;
+        }
+
+        .navi ul {
+            /* border: 1px solid blue; */
+            /* float: left; */
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            background-color: #255de1;
+            font-size: 20px;
+            color: white;
+        }
+
+        .navi li {
+            /* border: 1px solid red; */
+            list-style-type: none;
+            width: 25%;
+            height: 100%;
+            float: left;
+            text-align: center;
+            line-height: 50px;
+
+
+        }
+
+        .navi li:hover {
+            cursor: pointer;
+            background-color: black;
+        }
+
+        /* body css */
+        .body {
+            height: 64%
+        }
+
+        .body div {
+            float: left;
+        }
+
+        /* body - contents */
+        .body .contents {
+            width: 70%;
+            height: 100%;
+        }
+
+        /* body - side css */
+        .body .side {
+            width: 30%;
+            height: 100%;
+        }
+
+        .side .loginbox {
+            width: 100%;
+            height: 40%;
+        }
+
+        .loginbox .login_title {
+            width: 100%;
+            height: 30%;
+            text-align: center;
+            /* border-radius: 50px; */
+            /* border: 4px solid #535353; */
+            line-height: 55px;
+            color: #535353;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .loginbox .login_input {
+            width: 100%;
+            height: 50%;
+            border: 4px solid #535353;
+        }
+
+        .login_input div {
+            float: left;
+        }
+
+        .login_input .text {
+            width: 70%;
+            height: 100%;
+        }
+
+        .login_input .text div {
+            width: 100%;
+            height: 50%;
+        }
+
+        .login_input .text div input {
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+        .login_input .btn {
+            width: 30%;
+            height: 100%;
+        }
+
+        .login_input .btn button {
+            margin-top: 11px;
+            width: 80%;
+            height: 60%;
+            margin-left: 10px;
+            margin-top: 15px;
+
+        }
+
+        .loginbox .login_option {
+            width: 100%;
+            height: 20%;
+            text-align: center;
+        }
+
+        /* mail box css */
+        .side .mailbox {
+            width: 100%;
+            height: 40%;
+        }
+
+        .mail_title {
+            width: 100%;
+            height: 30%;
+            text-align: center;
+            /* border-radius: 50px; */
+            /* border: 4px solid #535353; */
+            line-height: 55px;
+            color: #535353;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .mail_show {
+            width: 100%;
+            height: 70%;
+            overflow-y: auto;
+            border: 4px solid #535353;
+
+        }
+
+        #mail_table {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* adbox css */
+        .side .adbox {
+            width: 100%;
+            height: 20%;
+            background-color: #255de1;
+        }
+
+        /* footer css */
+        .footer {
+            height: 10%;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
 </head>
-<style>
-    * {
-        box-sizing: border-box;
-    }
-
-    div {
-        border: 1px solid black;
-    }
-
-    .container {
-        width: 1000px;
-        height: 600px;
-        margin: auto;
-    }
-
-    /* 헤더 css */
-    .header {
-        height: 20%;
-    }
-
-    .header div {
-        float: left;
-        height: 100%;
-    }
-
-    .logo {
-        width: 20%
-    }
-
-    .title {
-        width: 65%
-    }
-
-    .reserved {
-        width: 15%
-    }
-
-
-    /* navi css */
-    .navi {
-        height: 10%;
-    }
-
-    .navi ul {
-        /* border: 1px solid red; */
-        padding: 0px;
-        height: 100%;
-        margin: 0px;    
-    }
-
-    .navi li {
-        list-style-type: none;
-        background-color: rgb(46, 89, 180);
-        /* border: 1px solid blue; */
-        float: left;
-        width: 25%;
-        height: 100%;
-        line-height: 55px;
-        text-align: center;
-        font-size: 16px;
-        color: white;
-        transition: 0.5s;
-    }
-
-    .navi li:hover {
-        cursor: pointer;
-        background-color: rgb(228, 228, 228);
-        color:black;
-    }
-
-
-    /* main css */
-    .main {
-        height: 55%;
-    }
-
-    .main div {
-        float: left;
-        height: 100%;
-    }
-
-    .contents {
-        width: 70%;
-    }
-
-
-
-
-
-    /* side css -login,mailbox */
-    .side {
-        width: 30%;
-    }
-    .box {
-        /* float:left; */
-    }
-    
-
-
-
-
-
-    /* login css */
-    #wrapper {
-        width:100%;
-        height:30%;
-    }
-
-    .login{
-        width: 100%;
-        height: 100%;
-    }
-
-    .login_box{
-        /* float:left; */
-        width:80%;
-        height: 100%;
-    }
-    .login_box .login_input{
-        width:100%;
-        height: 50%;
-    }
-
-    .login_input #id_input,
-    .login_input #pw_input{
-        width:100%;
-        height:100%;
-    }
-
-
-    .login_button{
-        width: 20%;
-        height: 100%;
-    }
-
-
-    .login_button #log_button{
-        
-        height: 50px;
-        margin-top: 20px;
-        margin-left: 6px;
-    }
-    
-    #mailbox {
-        width:100%;
-        height: 70%;
-    }
-
-    .footer {
-        height: 15%;
-    }
-</style>
 
 <body>
     <div class="container">
         <div class="header">
-            <div class="logo">LOGO</div>
-            <div class="title">title</div>
-            <div class="reserved">reserved</div>
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="title">
+                <img src="title.png" alt="">
+            </div>
+            <div class="reserved">
+                <img src="res.png" alt="">
+            </div>
         </div>
         <div class="navi">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
+                <li><i class="fa-solid fa-house"></i>Home</li>
+                <li><i class="fa-solid fa-magnifying-glass"></i></i>About</li>
+                <li><i class="fa-solid fa-user"></i>Portfolio</li>
+                <li><i class="fa-solid fa-paper-plane"></i>Contact</li>
             </ul>
         </div>
-        <div class="main">
+        <div class="body">
             <div class="contents">contents</div>
             <div class="side">
-                <div class="box" id="wrapper">
-                    <div class="login">
-                        <div class="login_box">
-                            <div class="login_input">
-                                <input type="text" id="id_input">
+                <div class="loginbox">
+                    <div class="login_title">
+                        <i class="fa-solid fa-right-to-bracket"></i>LoginBox
+                    </div>
+                    <div class="login_input">
+                        <div class="text">
+                            <div class="idtext">
+                                <input type="text" placeholder="input your id">
                             </div>
-                            <div class="login_input">
-                                <input type="password" id="pw_input">
-
+                            <div class="pwtext">
+                                <input type="password" placeholder="input your pw">
                             </div>
                         </div>
-                        <div class="login_button">
-                            <input type="button" value="login" id="log_button">
+                        <div class="btn">
+                            <button>login</button>
                         </div>
                     </div>
+                    <div class="login_option">
+                        <a href="#">아이디/비밀번호 찾기</a>
+                    </div>
                 </div>
-                <div class="box" id="mailbox">mailbox</div>
+                <div class="mailbox">
+                    <div class="mail_title">
+                        <i class="fa-solid fa-envelope"></i>MAIL-BOX
+                    </div>
+                    <div class="mail_show">
+                        <table border="1" id="mail_table">
+                            <tr>
+                                <td>1번째 메일입니다.</td>
+                            </tr>
+                            <tr>
+                                <td>2번째 메일입니다.</td>
+                            </tr>
+                            <tr>
+                                <td>3번째 메일입니다.</td>
+                            </tr>
+                            <tr>
+                                <td>4번째 메일입니다.</td>
+                            </tr>
+                            <tr>
+                                <td>5번째 메일입니다.</td>
+                            </tr>
+                            <tr>
+                                <td>6번째 메일입니다.</td>
+                            </tr>
+                            <tr>
+                                <td>7번째 메일입니다.</td>
+                            </tr>
+                            <tr>
+                                <td>8번째 메일입니다.</td>
+                            </tr>
+                            <tr>
+                                <td>9번째 메일입니다.</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="adbox"></div>
             </div>
+
         </div>
-        <div class="footer">footer</div>
-    </div>
+        <div class="footer">
+            copyright by BMJ
+        </div>
 </body>
 
 </html>

@@ -13,7 +13,7 @@
         }
 
         div {
-            /* border: 1px solid black; */
+            border: 1px solid black;
         }
 
         .container {
@@ -38,7 +38,8 @@
         .container .header .title {
             width: 65%;
         }
-        .container .header .title img{
+
+        .container .header .title img {
             width: 100%;
         }
 
@@ -49,7 +50,7 @@
 
         .container .navi {
             height: 6%;
-            margin-bottom: 20px;
+            /* margin-bottom: 20px; */
         }
 
         .container .navi ul {
@@ -69,9 +70,9 @@
         }
 
         .container .navi ul li:hover {
-            cursor:pointer;
-            background-color:black;
-            color:gray;
+            cursor: pointer;
+            background-color: black;
+            color: gray;
         }
 
         .container .body {
@@ -90,64 +91,90 @@
         .container .body .side {
             width: 30%;
         }
-        .container .body .side .loginbox{
-            height:30%;
+
+        .container .body .side .loginbox {
+            height: 30%;
             text-align: center;
         }
-        .login_title{
-            height:20%;
+
+        .login_title {
+            height: 20%;
             font-size: 17px;
-            padding-top:3px;
+            padding-top: 3px;
             background-color: rgb(247, 71, 71);
-            color:white;
-        }
-        .login_input{height:60%;}
-        .login_input>div{
-            float:left;
-            height:100%;
-        }
-        .login_input>.text{width:70%;}
-        .login_input>.text input{width:100%;height:100%}
-        .login_input>.text>div{height:50%;}
-
-        .login_input>.btn{width:30%;}
-        .login_input>.btn>button{
-            margin-top:11px;
-            width:80%;
-            height:70%;
+            color: white;
         }
 
-
-        .login_option{
-            height:20%;
+        .login_input {
+            height: 60%;
         }
 
-        .container .body .side .mailbox{
-            height:40%;
+        .login_input>div {
+            float: left;
+            height: 100%;
         }
-        .mail_title{
+
+        .login_input>.text {
+            width: 70%;
+        }
+
+        .login_input>.text input {
+            width: 100%;
+            height: 100%
+        }
+
+        .login_input>.text>div {
+            height: 50%;
+        }
+
+        .login_input>.btn {
+            width: 30%;
+        }
+
+        .login_input>.btn>button {
+            margin-top: 11px;
+            width: 80%;
+            height: 70%;
+        }
+
+
+        .login_option {
+            height: 20%;
+        }
+
+        .container .body .side .mailbox {
+            height: 40%;
+        }
+
+        .mail_title {
             height: 20%;
             text-align: center;
             padding-top: 10px;
             font-size: 17px;
             background-color: rgb(247, 71, 71);
-            color:white;
-            
+            color: white;
+
         }
-        .mail_show{
+
+        .mail_show {
             height: 80%;
-            overflow-y:auto;
+            overflow-y: auto;
         }
-        #mail_table{
-            width:100%;
+
+        #mail_table {
+            width: 100%;
             border: none;
         }
+
         .adbox {
             width: 100%;
             height: 30%;
         }
+
         .container .footer {
             height: 15%;
+            text-align: center;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -198,7 +225,7 @@
                         MAIL-BOX
                     </div>
                     <div class="mail_show">
-                        <table border = "1" id="mail_table">
+                        <table border="1" id="mail_table">
                             <tr>
                                 <td>1번째 메일입니다.</td>
                             </tr>
@@ -235,7 +262,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer">Footer</div>
+        <div class="footer">copyright by BMJ. Since 2024 3 19</div>
     </div>
 </body>
 
