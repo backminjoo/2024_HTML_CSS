@@ -5,23 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <style>
         * {
             box-sizing: border-box;
         }
 
         div {
-            border: 1px solid black;
+            /* border: 1px solid black; */
         }
 
         .container {
             width: 800px;
-            height: 600px;
+            height: 900px;
             margin: auto;
         }
 
         .container .header {
-            height: 20%;
+            height: 10%;
         }
 
         .container .header div {
@@ -36,13 +38,18 @@
         .container .header .title {
             width: 65%;
         }
+        .container .header .title img{
+            width: 100%;
+        }
+
 
         .container .header .reserved {
             width: 15%;
         }
 
         .container .navi {
-            height: 10%;
+            height: 6%;
+            margin-bottom: 20px;
         }
 
         .container .navi ul {
@@ -62,16 +69,16 @@
         }
 
         .container .navi ul li:hover {
-            cursor: pointer;
-            background-color: black;
-            color: gray;
+            cursor:pointer;
+            background-color:black;
+            color:gray;
         }
 
         .container .body {
-            height: 55%;
+            height: 69%;
         }
 
-        .container .body div {
+        .container .body>div {
             float: left;
             height: 100%;
         }
@@ -83,7 +90,62 @@
         .container .body .side {
             width: 30%;
         }
+        .container .body .side .loginbox{
+            height:30%;
+            text-align: center;
+        }
+        .login_title{
+            height:20%;
+            font-size: 17px;
+            padding-top:3px;
+            background-color: rgb(247, 71, 71);
+            color:white;
+        }
+        .login_input{height:60%;}
+        .login_input>div{
+            float:left;
+            height:100%;
+        }
+        .login_input>.text{width:70%;}
+        .login_input>.text input{width:100%;height:100%}
+        .login_input>.text>div{height:50%;}
 
+        .login_input>.btn{width:30%;}
+        .login_input>.btn>button{
+            margin-top:11px;
+            width:80%;
+            height:70%;
+        }
+
+
+        .login_option{
+            height:20%;
+        }
+
+        .container .body .side .mailbox{
+            height:40%;
+        }
+        .mail_title{
+            height: 20%;
+            text-align: center;
+            padding-top: 10px;
+            font-size: 17px;
+            background-color: rgb(247, 71, 71);
+            color:white;
+            
+        }
+        .mail_show{
+            height: 80%;
+            overflow-y:auto;
+        }
+        #mail_table{
+            width:100%;
+            border: none;
+        }
+        .adbox {
+            width: 100%;
+            height: 30%;
+        }
         .container .footer {
             height: 15%;
         }
@@ -94,20 +156,84 @@
     <div class="container">
         <div class="header">
             <div class="logo">Logo</div>
-            <div class="title">Title</div>
+            <div class="title">
+                <img src="title.png" alt="">
+            </div>
             <div class="reserved">Rsv</div>
         </div>
         <div class="navi">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
+                <li><i class="fa-solid fa-house"></i>Home</li>
+                <li><i class="fa-solid fa-magnifying-glass"></i></i>About</li>
+                <li><i class="fa-solid fa-user"></i>Portfolio</li>
+                <li><i class="fa-solid fa-paper-plane"></i>Contact</li>
             </ul>
         </div>
         <div class="body">
             <div class="contents">Contents</div>
-            <div class="side">Side</div>
+            <div class="side">
+                <div class="loginbox">
+                    <div class="login_title">
+                        LoginBox
+                    </div>
+                    <div class="login_input">
+                        <div class="text">
+                            <div class="idtext">
+                                <input type="text" placeholder="input your id">
+                            </div>
+                            <div class="pwtext">
+                                <input type="password" placeholder="input your pw">
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button>Login</button>
+                        </div>
+                    </div>
+                    <div class="login_option">
+                        <a href="#">아이디/비밀번호 찾기</a>
+                    </div>
+                </div>
+                <div class="mailbox">
+                    <div class="mail_title">
+                        MAIL-BOX
+                    </div>
+                    <div class="mail_show">
+                        <table border = "1" id="mail_table">
+                            <tr>
+                                <td>1번째 메일입니다.</td>
+                            </tr>
+                            <tr>
+                                <td>2번째 메일입니다.</td>
+                            </tr>
+                            <tr>
+                                <td>3번째 메일입니다.</td>
+                            </tr>
+                            <tr>
+                                <td>4번째 메일입니다.</td>
+                            </tr>
+                            <tr>
+                                <td>5번째 메일입니다.</td>
+                            </tr>
+                            <tr>
+                                <td>6번째 메일입니다.</td>
+                            </tr>
+                            <tr>
+                                <td>7번째 메일입니다.</td>
+                            </tr>
+                            <tr>
+                                <td>8번째 메일입니다.</td>
+                            </tr>
+                            <tr>
+                                <td>9번째 메일입니다.</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="adbox">
+                    <img src="ad.png" alt="">
+                </div>
+            </div>
         </div>
         <div class="footer">Footer</div>
     </div>
