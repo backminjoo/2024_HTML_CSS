@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{box-sizing: border-box;}
-        div{border:1px solid black;}
-        .container{
-            width:400px;
+        * {
+            box-sizing: border-box;
+        }
+
+        div {
+            border: 1px solid black;
+        }
+
+        .container {
+            width: 400px;
             height: 400px;
-            margin:auto;
+            margin: auto;
             position: relative;
         }
-        .box{
+
+        .box {
             width: 100px;
-            height:100px;
+            height: 100px;
             position: absolute;
+            /* position: relative; */
         }
+
         /* #box1{
             position:absolute;
             bottom: 10px;
         } */
-        #box1{
-            right:10px;
-            top:10px;
+        #box1 {
+            right: 10px;
+            top: 10px;
         }
-        #box2{
-            bottom:10px;
-            left:40px;
+
+        #box2 {
+            bottom: 10px;
+            left: 40px;
         }
     </style>
 </head>
+
 <body>
     <!--
         #position 속성
@@ -53,9 +65,10 @@
 
     -->
     <div class="container">
-        <div id="box1" class="box"></div>
-        <div id="box2" class="box"></div>
+        <div id="box1" class="box">box1</div>
+        <div id="box2" class="box">box2</div>
 
     </div>
 </body>
+
 </html>

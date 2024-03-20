@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{box-sizing: border-box;}
-        div{border:1px solid black;}
-        .container{
-            width:500px;
+        * {
+            box-sizing: border-box;
+        }
+
+        div {
+            border: 1px solid black;
+        }
+
+        .container {
+            width: 500px;
             height: 500px;
         }
-        .box{
+
+        .box {
             width: 100px;
-            height:100px;
+            height: 100px;
         }
-        #box1{
+
+        #box1 {
             position: relative;
             /* top: 10px;
             left: 10px; */
@@ -37,15 +46,16 @@
         }
 
         /* 나중에 만들어진 box2가 box1 위에 위치 */
-        #box2{
-            position: relative;
-            /* right: 20px;  */
+        #box2 {
+            /* position: relative; */
+            /* right: 20px; */
             background-color: pink;
             z-index: 6;
-            
+
         }
     </style>
 </head>
+
 <body>
     <!--
         #position 속성
@@ -71,8 +81,9 @@
 
     -->
     <div class="container">
-        <div id="box1" class="box"></div>
-        <div id="box2" class="box"></div>
+        <div id="box1" class="box">box1</div>
+        <div id="box2" class="box">box2</div>
     </div>
 </body>
+
 </html>
