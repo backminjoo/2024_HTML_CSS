@@ -13,7 +13,22 @@
         }
 
         div {
-            border: 1px solid black;
+            /* border: 1px solid black; */
+        }
+
+        /* 스크롤바 디자인 */
+        /* Webkit (Chrome, Safari 등) */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #888888;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
         }
 
         .container {
@@ -50,7 +65,8 @@
         .navi {
             height: 6%;
             /* 간격 */
-            margin-bottom: 50px;
+            /* margin-bottom: 50px; */
+            margin-bottom: 40px;
         }
 
         .navi ul {
@@ -75,9 +91,11 @@
 
 
         }
-        .navi li i{
+
+        .navi li i {
             margin-right: 20px;
         }
+
         .navi li:hover {
             cursor: pointer;
             background-color: black;
@@ -111,9 +129,9 @@
 
         .loginbox .login_title {
             width: 100%;
-            height: 30%;
+            height: 20%;
             /* 간격 */
-            height: 50px;
+            /* height: 50px; */
             text-align: center;
             border-radius: 50px;
             border: 4px solid #535353;
@@ -125,7 +143,7 @@
 
         .loginbox .login_input {
             width: 100%;
-            height: 50%;
+            height: 60%;
             /* border: 4px solid  #c5c4c4; */
         }
 
@@ -141,15 +159,16 @@
         .login_input .text div {
             width: 100%;
             height: 50%;
-
+            padding: 5px;
         }
 
         .login_input .text div input {
             width: 100%;
             height: 100%;
             /* 간격 */
-            margin-top: 10px;
-            height: 50px;
+            /* margin-top: 10px; */
+            /* height: 50px; */
+            border-width: 0 0 3px;
         }
 
 
@@ -166,8 +185,8 @@
             height: 94%;
             /* margin-left: 10px;
             margin-top: 10px; */
-            position:absolute;
-            top:5px;
+            position: absolute;
+            top: 5px;
             left: 9px;
             background-color: #b1b1b1;
             border: none;
@@ -182,9 +201,10 @@
             height: 20%;
             text-align: center;
             /* 간격 */
-            margin-top: 10px;
+            /* margin-top: 10px; */
         }
-        .loginbox .login_option a{
+
+        .loginbox .login_option a {
             color: black;
             text-decoration: none;
         }
@@ -197,9 +217,9 @@
 
         .mail_title {
             width: 100%;
-            height: 30%;
+            height: 20%;
             /* 간격 */
-            height: 50px;
+            /* height: 50px; */
             text-align: center;
             border-radius: 50px;
             border: 4px solid #535353;
@@ -210,22 +230,23 @@
         }
 
         .mail_show {
-                        /* 높이 지정하지 않으면 parent가 child의 크기 만큼 늘어남 */
+            /* 높이 지정하지 않으면 parent가 child의 크기 만큼 늘어남 */
 
             width: 100%;
-            height: 70%;
+            height: 80%;
             overflow-y: auto;
             /* border: 4px solid  #c5c4c4; */
 
         }
 
-        .mail_show .mail{
+        .mail_show .mail {
             text-align: center;
             height: 35px;
             line-height: 35px;
             width: 100%;
 
         }
+
         #mail_table {
             width: 100%;
             height: 100%;
@@ -235,7 +256,15 @@
         .side .adbox {
             width: 100%;
             height: 20%;
-            background-color:  #c5c4c4;
+            /* background-color: #c5c4c4; */
+            margin-top: 40px;
+        }
+
+        .adbox img {
+            width: 300px;
+            height: 115px;
+            border: 4px solid #bbbbbb;
+            border-radius: 20px;
         }
 
         /* footer css */
@@ -244,50 +273,55 @@
             width: 100%;
             text-align: center;
             font-weight: bold;
-            margin-top: 100px;
+            margin-top: 60px;
         }
 
 
 
 
         /* contents css */
-        .contents{
+        .contents {
             width: 100%;
             height: 100%;
             /* border:1px solid red; */
         }
-        .contents_box{
+
+        .contents_box {
             width: 100%;
             height: 50%;
             /* border: 1px solid black; */
 
             /* 간격 */
-            margin-bottom: 30px;
+            /* margin-bottom: 30px; */
         }
-        .contents_inner{
+
+        .contents_inner {
             width: 50%;
             height: 100%;
             float: left;
             /* border: 1px solid blue; */
             /* border-radius: 20px; */
         }
-        .contents_inner:hover{
+
+        .contents_inner:hover {
             cursor: pointer;
             border: 5px solid rgb(211, 211, 211);
             border-radius: 20px;
         }
+
         /* .contents_inner .inner_img{
             width: 100%;
             height: 100%;
             border: 1px solid pink;
         } */
-        .contents_inner img{
+        .contents_inner img {
             width: 100%;
             height: 80%;
             /* border-radius: 20px; */
             padding: 5px;
         }
-        .contents_inner .inner_text{
+
+        .contents_inner .inner_text {
             width: 100%;
             height: 20%;
             text-align: center;
@@ -379,7 +413,7 @@
                 </div>
                 <div class="mailbox">
                     <div class="mail_title">
-                        <i class="fa-solid fa-envelope" style="margin-right: 10px;"></i>MAIL-BOX
+                        </i>MAIL-BOX
                     </div>
                     <div class="mail_show">
                         <!-- <table border="1" id="mail_table">
@@ -411,16 +445,24 @@
                                 <td>9번째 메일입니다.</td>
                             </tr>
                         </table> -->
-                        <div class="mail">1번째 메일입니다.</div>
-                        <div class="mail">2번째 메일입니다.</div>
-                        <div class="mail">3번째 메일입니다.</div>
-                        <div class="mail">4번째 메일입니다.</div>
-                        <div class="mail">5번째 메일입니다.</div>
-                        <div class="mail">6번째 메일입니다.</div>
+                        <div class="mail"><i class="fa-solid fa-envelope" style="margin-right: 10px;"></i>1번째 메일입니다.
+                        </div>
+                        <div class="mail"><i class="fa-solid fa-envelope" style="margin-right: 10px;"></i>2번째 메일입니다.
+                        </div>
+                        <div class="mail"><i class="fa-solid fa-envelope" style="margin-right: 10px;"></i>3번째 메일입니다.
+                        </div>
+                        <div class="mail"> <i class="fa-solid fa-envelope" style="margin-right: 10px;"></i>4번째 메일입니다.
+                        </div>
+                        <div class="mail"><i class="fa-solid fa-envelope" style="margin-right: 10px;"></i>5번째 메일입니다.
+                        </div>
+                        <div class="mail"><i class="fa-solid fa-envelope" style="margin-right: 10px;"></i>6번째 메일입니다.
+                        </div>
                     </div>
 
                 </div>
-                <div class="adbox"></div>
+                <div class="adbox">
+                    <img src="ad.jpg" alt="">
+                </div>
             </div>
 
         </div>
