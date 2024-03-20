@@ -12,9 +12,9 @@
             box-sizing: border-box;
         }
 
-        div {
+        /* div {
             border: 1px solid black;
-        }
+        } */
 
         .container {
             width: 800px;
@@ -67,6 +67,8 @@
             height: 100%;
             line-height: 55px;
             text-align: center;
+
+            
         }
 
         .container .navi ul li:hover {
@@ -74,6 +76,11 @@
             background-color: black;
             color: gray;
         }
+
+        /* .container .navi ul li i{
+            margin-right: 20px;
+        } */
+
 
         .container .body {
             height: 69%;
@@ -157,10 +164,17 @@
         }
 
         .mail_show {
+            /* 높이 지정하지 않으면 parent가 child의 크기 만큼 늘어남 */
             height: 80%;
             overflow-y: auto;
-        }
 
+        }
+        .mail_show .mail{
+            text-align: center;
+            height: 35px;
+            line-height: 35px;
+
+        }
         #mail_table {
             width: 100%;
             border: none;
@@ -184,7 +198,7 @@
         <div class="header">
             <div class="logo">Logo</div>
             <div class="title">
-                <img src="title.png" alt="">
+                <!-- <img src="title.png" alt=""> -->
             </div>
             <div class="reserved">Rsv</div>
         </div>
@@ -225,7 +239,7 @@
                         MAIL-BOX
                     </div>
                     <div class="mail_show">
-                        <table border="1" id="mail_table">
+                        <!-- <table border="1" id="mail_table">
                             <tr>
                                 <td>1번째 메일입니다.</td>
                             </tr>
@@ -253,7 +267,13 @@
                             <tr>
                                 <td>9번째 메일입니다.</td>
                             </tr>
-                        </table>
+                        </table> -->
+                        <div class="mail">1번째 메일입니다.</div>
+                        <div class="mail">2번째 메일입니다.</div>
+                        <div class="mail">3번째 메일입니다.</div>
+                        <div class="mail">4번째 메일입니다.</div>
+                        <div class="mail">5번째 메일입니다.</div>
+                        <div class="mail">6번째 메일입니다.</div>
                     </div>
 
                 </div>

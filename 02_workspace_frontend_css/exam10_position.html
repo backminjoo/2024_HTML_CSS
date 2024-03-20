@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        div{border:1px solid black;}
+        .container{
+            width:500px;
+            height: 500px;
+        }
+        .box{
+            width: 100px;
+            height:100px;
+        }
+        #box1{
+            position: relative;
+            /* top: 10px;
+            left: 10px; */
+            top: 50px;
+            left: 50px;
+
+
+            /*  #rgba
+                투명도 수가 작아질수록 투명도가 높아짐
+            */
+            background-color: rgba(112, 255, 243, 0.5);
+
+            /*
+                #z-index
+                    z-index 기본값(auto/ 순서대로 배치됨)
+                    box1을 위에 위치하고싶을때 z-index로 조정 , 더 큰 수가 앞으로 위치하게 됨
+            */
+            z-index: 7;
+        }
+
+        /* 나중에 만들어진 box2가 box1 위에 위치 */
+        #box2{
+            position: relative;
+            /* right: 20px;  */
+            background-color: pink;
+            z-index: 6;
+            
+        }
+    </style>
+</head>
+<body>
+    <!--
+        #position 속성
+            position이란
+            > 문서 상에 요소를 배치하는 방법
+            > top, right , bottom, left 로 위치 잡기
+
+            position의 기본값
+            position:static (현재위치에 고정)- 위치 바꿀 수 없다.
+
+
+            position:relative(상대적인)
+            > 요소 자기 자신(원래위치)을 기준으로 배치
+            > normal flow 상에서 요소가 원래 있어야 할 위치를 기준에서
+            top/right/bottom/left가 적용됨
+            > 위치를 이동하면서 다른 요소에 영향을 주지 않음, 문서 상 위치가 그대로 유지됨
+
+
+
+
+
+
+
+    -->
+    <div class="container">
+        <div id="box1" class="box"></div>
+        <div id="box2" class="box"></div>
+    </div>
+</body>
+</html>

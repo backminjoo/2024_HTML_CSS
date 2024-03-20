@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        div{border:1px solid black;}
+        .container{
+            width:400px;
+            height: 400px;
+            margin:auto;
+            position: relative;
+        }
+        .box{
+            width: 100px;
+            height:100px;
+            position: absolute;
+        }
+        /* #box1{
+            position:absolute;
+            bottom: 10px;
+        } */
+        #box1{
+            right:10px;
+            top:10px;
+        }
+        #box2{
+            bottom:10px;
+            left:40px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        #position 속성
+            position:absolute
+            > 기본적으로 normal flow 위치에 배치되나,
+            top/left/right/bottom이 적용될 시,
+            position속성이 static이 아닌 최초의 parent를 기준으로 적용됨
+
+            box의 parent는 container 인데
+            container는 position:static 적용되어있으로 기준이 될 수 없음
+            해결방법)
+            > container에 position:relative 주면 기준이 됨
+
+
+
+
+
+
+
+    -->
+    <div class="container">
+        <div id="box1" class="box"></div>
+        <div id="box2" class="box"></div>
+
+    </div>
+</body>
+</html>
