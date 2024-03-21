@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{border:1px solid black;}
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            transition-duration: 1s;
+        }
+        #box1{
+            background-color: black;
+            color:white;
+
+        }
+        #box1:hover{
+            /* 각도 */
+            /* transform: rotate(360deg); */
+
+            /* x축으로 180도 회전 */
+            /* transform: rotateX(180deg); */
+            /* transform: rotateZ(180deg); */
+            transform: rotateY(180deg);
+
+            
+            background-color: white;
+            color: #000;
+        }
+
+        #box2:hover{
+            /* 위치 translate(x축, y축) */
+            transform: translate(100px,-50px);
+        }
+
+        #box3:hover{
+            /* 크기 2배 */
+            transform: scale(2);
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+        # Transform : 요소에 변화기능을 부여하는 속성
+
+    -->
+    <div class="box" id="box1">
+        Rotate
+    </div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+</body>
+</html>

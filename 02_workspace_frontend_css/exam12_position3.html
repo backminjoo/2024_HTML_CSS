@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        div{border: 1px solid black;}
+        .container{
+            width: 400px;
+            height: 4000px;
+            margin: auto;
+            position: relative;
+        }
+        .box{
+            width:100px;
+            height: 100px;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!--#position 속성
+        position:fixed
+        > 위치 조정을 하는 기능은 같지만 기준선이 viewport가 된다.
+        > 내가 보고있는 현재 view port 기준으로 고정
+
+    -->
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+</body>
+</html>
